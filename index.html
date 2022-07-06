@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+    <title>Grinning Bull BBQ</title>
+</head>
+<body>
+    <header>
+        <a href="#" class = "logo">
+            <img src="images/No background.png" alt="Grinning Bull Logo" id="gb-logo">
+        </a>
+        <ul>
+            <li><a href = "#menu">Menu</a></li>
+            <li><a href = "#private-events">Events</a></li>
+            <li><a href = "#private-events">Catering</a></li>
+            <li><a href = "#contact">Contact</a></li>
+            <li><a href = "https://www.facebook.com/GrinningBullBBQ/?ref=page_internal" target="_blank">
+                <img src="images/facebook-logo-icon-png-22.jpeg" alt="Faceook link" id = 'facebook-button'>
+            </a></li>
+
+        </ul>
+    </header>
+    <div class = "banner">
+        <h1 id = 'texas-bbq'>Bringing Texas BBQ to the Lou</h1>
+       
+    </div>
+    <script type = "text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+<section class = "bio" id = 'about'>
+    <h1>Who are We?</h1>
+      <p>Grinning Bull BBQ is a mobile food vendor and full-scale catering service, bringing world class meat smoked with a Texas-style flare to events in the greater St. Louis area.</p>
+      <img src="images/brisket_sandwich.jpeg" alt="Brisket Sandwich">
+      <button id="menu-button" href = "#menu">View Menu</button>
+</section>
+  <section class = "book" id = 'titles'>
+    <h2>"A taste of Texas in every slice."</h2>
+      <p>Owner and pitmaster Kevin Bulgerin grew up in Texas, and developed a passion for great barbeque through years of working in the restaurant business. After he and his growing family moved to St. Louis, Kevin made it a goal to bring his Texas roots to the barbeque scene, and Grinning Bull BBQ was born in 2022.</p>
+  </section>
+  <section id = 'contact'>
+    <h2>Get in Contact</h2>
+    <p>Want us at your event? Send us a message.</p>
+  <form action="https://formsubmit.co/aguynamedjacob@gmail.com" method="POST" class="form-example">
+    <div class="form-example">
+      <input type="text" name="First Name" id="fname" placeholder="First Name" required>
+    </div>
+    <div class="form-example">
+      <input type="text" name="Last Name" id="lname" placeholder="Last Name" required>
+    </div>
+    <div class="form-example">
+      <input type="text" name="Email" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-example">
+        <input type="text" name="phone" id="phone" placeholder="Phone Number">
+        </div>
+      <div class="form-example">
+        <textarea name = "message" placeholder="Message" id = "textbox" required></textarea>
+      </div>
+    <button name="button" type="submit" id="submit" class="form-example" onclick="">Submit</button>
+    <h2 class = 'welcome' id = "welcome"></h2>
+  </form>
+  </section>
+  <footer>
+    <p>Check us out online!</p>
+    <a href = "https://www.facebook.com/GrinningBullBBQ/?ref=page_internal" target="_blank">
+        <img src="images/facebook-logo-icon-png-22.jpeg" alt="Faceook link" id = 'facebook-button'>
+    </a>
+  </footer>
+</body>
+</html>
