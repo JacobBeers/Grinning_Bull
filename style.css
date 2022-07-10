@@ -19,23 +19,18 @@ body {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 60px;
-    z-index: 100000;
-    height: 115px;
-    background-color: rgb(122, 122, 0);;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  z-index: 1000000000;
 }
 
 header.sticky {
-    padding: 5px 50px;
-    background: rgb(122, 122, 0);
+    
 }
 
 header .logo {
@@ -254,3 +249,68 @@ section {
   }
 
   
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    section {
+      max-width: 90%;
+    }
+    
+    .form-example {
+      max-width: fit-content;
+    }
+
+    .bio img {
+      max-width: fit-content;
+    }
+    textarea {
+      width: 300px;
+    }
+}
